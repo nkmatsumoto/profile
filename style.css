@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(45deg, #FFF8F3 0%, #405D72 100%);
+  color: #EAEAEA;
+  padding: 10px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #EAEAEA;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #7199b6;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.container {
+  /* position: relative; */
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+  }
+
+.card {
+  background-color: #363636;
+  opacity: 0.8;
+  padding: 10px;
+  width: auto;
+  margin: 25px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /* border: 1px solid #787878; */
+
+}
+
+.img-rounded {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  opacity: 0.95;
+  object-fit: cover;
+}
+
+/* .margin-top {
+  margin-top: 8px;
+} */
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  font-size: 40px;
+  margin: 16px;
+}
+
+.list-inline i:hover {
+  color: #EF5A6F;
+  transition: 0.5s;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#bg_video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover; /* Ensures the video covers the entire background */
+  opacity: 0.4;
+}
